@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Add Review</title>
+		<link rel="stylesheet" href="style/add-review.css" />
+	</head>
+	<body>
+		<nav>
+			<h1>SanReviews</h1>
+		</nav>
+
+		<div class="container">
+			<h1 class="container-text">Add Review</h1>
+
+			<div class="book-detail">
+				<h4>Book Details:</h4>
+				<h2>Kata Sandi</h2>
+				<h3>by Dian Yustyaningsih</h3>
+			</div>
+
+			<form id="reviewForm">
+				<div class="form-input">
+					<label for="rating">Rating:</label>
+					<select id="rating" name="rating" required>
+						<option value="">Choose Rating</option>
+						<option value="Sangat baik">Sangat baik</option>
+						<option value="Baik">Baik</option>
+						<option value="Biasa saja">Biasa saja</option>
+						<option value="Buruk">Buruk</option>
+						<option value="Sangat buruk">Sangat buruk</option>
+					</select>
+					<br />
+					<br />
+					<label for="review">Your Review:</label>
+					<textarea
+						id="review"
+						name="review"
+						placeholder="Write your review here..."
+						required
+						rows="5"></textarea>
+				</div>
+
+				<button type="submit">Submit Review</button>
+			</form>
+		</div>
+	</body>
+</html>

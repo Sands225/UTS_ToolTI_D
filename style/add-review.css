@@ -1,0 +1,113 @@
+/* General Styling */
+body {
+	font-family: Poppins, Arial, sans-serif;
+	background-color: #f5f5dc;
+	color: #4b3621;
+	margin: 0;
+}
+
+/* Navigation */
+nav {
+	top: 0;
+	padding: 5px 15px;
+	width: 100vw;
+	background-color: #333333;
+	color: #f5f5dc;
+	position: fixed;
+}
+
+/* Container */
+.container {
+	max-width: 800px;
+	margin: 180px auto 20px auto;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.container-text {
+	text-align: center;
+	color: #6b8e92;
+}
+
+/* Book Details */
+.book-detail {
+	margin-bottom: 20px;
+	padding: 15px;
+	background-color: #f9f9f9;
+	border-left: 5px solid #6b8e92;
+}
+
+.book-detail h2,
+.book-detail h3 {
+	margin: 5px 0;
+}
+
+/* Form Styling */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.form-input label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-input input,
+.form-input select {
+	width: 100%;
+	padding: 8px;
+	font-size: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+button {
+	padding: 10px;
+	background-color: #6b8e92;
+	color: #fff;
+	font-size: 1rem;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+}
+
+button:hover {
+	background-color: #4b6d70;
+}
+
+/* Reviews Section */
+.reviews {
+	margin-top: 30px;
+}
+
+.reviews h3 {
+	margin-bottom: 10px;
+	color: #6b8e92;
+}
+
+.review {
+	padding: 10px;
+	margin-bottom: 15px;
+	background: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.review strong {
+	display: block;
+	margin-bottom: 5px;
+	color: #4b3621;
+}
+
+textarea {
+	width: 100vw;
+	max-width: 100%;
+	min-width: 300px;
+	box-sizing: border-box;
+	resize: vertical;
+}
