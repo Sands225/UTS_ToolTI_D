@@ -59,7 +59,10 @@ nav {
 	justify-content: center;
 }
 
-img {
+.book-cover img {
+	width: 55%;
+	min-width: 150px;
+	max-width: 200px;
 	margin: 0 auto;
 	border-radius: 10px;
 }
@@ -75,8 +78,40 @@ img {
 	text-align: center;
 }
 
+.book-review {
+	margin-top: -20px;
+	text-align: center;
+	align-items: center;
+}
+
 .book-description {
 	text-align: justify;
+}
+
+.add-button {
+	margin: 0 30px;
+	display: flex;
+	justify-content: end;
+}
+
+.add-button button {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #6b8e92;
+}
+
+.add-button a {
+	text-decoration: none;
+	color: white;
+}
+
+.update-button {
+	background-color: #6b8e92;
+}
+
+.delete-button {
+	background: #e74c3c;
 }
 
 .book-button {
@@ -88,9 +123,9 @@ img {
 
 .book-button button {
 	padding: 10px 5px;
+	margin: 0 0 0 10px;
 	border-radius: 5px;
 	border: none;
-	background-color: #6b8e92;
 }
 
 .book-button a {
