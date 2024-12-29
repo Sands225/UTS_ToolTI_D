@@ -1,5 +1,5 @@
 <?php
-    include_once('./db.php');
+    include './db.php';
 
     function addBook($book_data) {
         global $mysqli;
@@ -8,12 +8,12 @@
         $author = htmlspecialchars($book_data["author"]);
         $rating = floatval($book_data["rating"]);
         $description = htmlspecialchars($book_data["description"]);
-
+        
         $cover = uploadCover();
         
-        $query = "INSERT INTO books
-                VALUES ('', '$title', '$author', '$cover', '$rating', '$description')";
-
+        $query = "INSERT INTO books (title, author, cover, rating, description)
+                VALUES ('$title', '$author', '$cover', '$rating', '$description')";
+        
         mysqli_query($mysqli, $query);
         return mysqli_affected_rows($mysqli);
     }
@@ -83,8 +83,9 @@
             return false;
         }
 
-        // upload image
-        move_uploaded_file($tmpName, './src/upload/' . $coverName);
+        $targetDir = 'src/upload/';
+        move_uploaded_file($tmpName, $targetDir . basename($coverName));
+
         return $coverName;
     }
 

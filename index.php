@@ -18,7 +18,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM books");
 				<h1>SanReviews</h1>
 			</div>
 			<div class="right-nav">
-				<a href="/about.php">About</a>
+				<a href="about.php">About</a>
 			</div>
 		</nav>
 		<div class="header">
@@ -34,7 +34,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM books");
 			<div class="book">
 				<div class="book-cover">
 					<img 
-						src="src/<?php echo $book_data['cover']?>" 
+						src="./src/upload/<?php echo $book_data['cover']?>" 
 						alt="<?php echo $book_data['cover']?>" 
 						width="55%" />
 				</div>
@@ -42,7 +42,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM books");
 					<?php echo $book_data['title']?>
 				</h1>
 				<h3 class="book-author">
-					<?php echo "by" . $book_data['author']?>
+					<?php echo "by " . $book_data['author']?>
 				</h3>
 				<h4 class="book-review">
 					⭐ <?php echo $book_data['rating']?> / 5.0
@@ -73,8 +73,8 @@ $result = mysqli_query($mysqli, "SELECT * FROM books");
 				<div class="footer-links">
 					<h4>Quick Links</h4>
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About me</a></li>
+						<li><a href="index.php">Home</a></li>
+						<li><a href="about.php">About me</a></li>
 					</ul>
 				</div>
 

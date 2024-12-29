@@ -43,7 +43,7 @@ if (isset($_POST["submit"])) {
 				<h1>SanReviews</h1>
 			</div>
 			<div class="right-nav">
-				<a href="/index.php">Back</a>
+				<a href="index.php">Back</a>
 			</div>
 		</nav>
 

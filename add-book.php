@@ -22,7 +22,6 @@ if (isset($_POST["submit"])) {
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -37,7 +36,7 @@ if (isset($_POST["submit"])) {
 				<h1>SanReviews</h1>
 			</div>
 			<div class="right-nav">
-				<a href="/index.php">Back</a>
+				<a href="index.php">Back</a>
 			</div>
 		</nav>
 
@@ -92,10 +91,9 @@ if (isset($_POST["submit"])) {
 						type="file"
 						id="cover"
 						name="cover"
-						accept="image/*"
 						required />
 				</div>
-				<button type="submit" name="submit">Add Book</button>
+				<button type="submit" name="submit" id="name">Add Book</button>
 			</form>
 		</div>
 	</body>
