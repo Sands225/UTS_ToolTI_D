@@ -1,6 +1,20 @@
 <?php
     include './db.php';
 
+    function readAllDataBooks() {
+        global $mysqli;
+
+        $result = mysqli_query($mysqli, "SELECT * FROM books");
+        return $result;
+    }
+
+    function readDataBookById($id_book) {
+        global $mysqli;
+
+        $result = mysqli_query($mysqli, "SELECT * FROM books WHERE id_book = $id_book");
+        return $result;
+    }
+
     function addBook($book_data) {
         global $mysqli;
 

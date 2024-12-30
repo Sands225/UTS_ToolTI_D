@@ -4,8 +4,7 @@ require './functions.php';
 
 $id_book = $_GET['id_book'];
 
-$query = "SELECT * FROM books WHERE id_book = $id_book";
-$result = mysqli_query($mysqli, $query);
+$result = readDataBookById($id_book);
 
 $book_data = mysqli_fetch_assoc($result);
 

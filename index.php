@@ -1,7 +1,7 @@
 <?php
 require './functions.php';
 
-$result = mysqli_query($mysqli, "SELECT * FROM books");
+$result = readAllDataBooks();
 ?>
 
 <!DOCTYPE html>
