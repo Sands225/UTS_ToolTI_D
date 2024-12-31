@@ -4,8 +4,7 @@ require './functions.php';
 
 $id_book = $_GET['id_book'];
 
-$query = "SELECT * FROM books WHERE id_book = $id_book";
-$result = mysqli_query($mysqli, $query);
+$result = readBookById($id_book);
 
 $book_data = mysqli_fetch_assoc($result);
 
@@ -43,7 +42,7 @@ if (isset($_POST["submit"])) {
 				<h1>SanReviews</h1>
 			</div>
 			<div class="right-nav">
-				<a href="/index.php">Back</a>
+				<a href="index.php">Back</a>
 			</div>
 		</nav>
 
