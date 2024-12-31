@@ -8,7 +8,7 @@
         return $result;
     }
 
-    function readDataBookById($id_book) {
+    function readBookById($id_book) {
         global $mysqli;
 
         $result = mysqli_query($mysqli, "SELECT * FROM books WHERE id_book = $id_book");

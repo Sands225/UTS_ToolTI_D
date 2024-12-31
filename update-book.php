@@ -4,7 +4,7 @@ require './functions.php';
 
 $id_book = $_GET['id_book'];
 
-$result = readDataBookById($id_book);
+$result = readBookById($id_book);
 
 $book_data = mysqli_fetch_assoc($result);
 
